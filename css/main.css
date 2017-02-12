@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 body {
     display: block;
@@ -38,39 +39,69 @@ section .info
 }
 .navbar
 {
-    height: 13%;
+    height: 10%;
     width: 100%;
     display: block;
-    background-color: rgba(255,255,255,0.8);
-	border-color: rgba(255,255,255,0)
+    background-color: rgba(255,255,255,0.2);
+	border-color: rgba(255,255,255,0.2)
 }
 .navbar .info
 {
-    padding: 0px;
-     height: 10px;
-    background-color: deepskyblue;
+	height: 15px;
+	background-color: deepskyblue
 }
-.navbar .search
+.navbar-default {
+  background-color: rgba(255,255,255,0.9);
+  border-color: rgba(34, 34, 34, 0.05);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  transition: all 0.35s;
+}
+.navbar-default .navbar-header .navbar-brand {
+  color:black;
+	margin-top: 12px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+  color: #eb3812;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  font-weight: 700;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.navbar-default .nav > li 
 {
 	margin-top: 15px;
-	margin-left:30px;
 }
-.navbar .navbar-brand img
+.navbar-default .nav > li div
 {
-    width: 65px;
-    height: 60px;
-    margin-left: 80px;
-    margin-top: -10px;
+	margin-top: 7px;
 }
-.nav a
-{
-    font-size: 15px;
-    margin-top: 7;
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: gray;
 }
-.nav li.active 
-{
-    color: black;
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+  color: dodgerblue;
 }
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+  color: dodgerblue!important;
+  background-color: transparent;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+	color: dodgerblue;
+}
+
 header
 {
     margin-top: 6.2%;
@@ -98,17 +129,17 @@ header .inner-header h1
 .carousel-indicators .active{
     background-color: skyblue;
 }
-.about-us h2 ,.services h2,.work h2
+.about-us h2 ,.services h2,.work h2,.info-images h2
 {
 	font-family:  'Kaushan Script';
 	text-align: center;
 }
-.about-us h1,.services h1,.work h1
+.about-us h1,.services h1,.work h1,.info-images h1
 {
 	font-family:  'Montserrat';
 	text-align: center;
 }
-.about-us p,.services p,.work p
+.about-us p,.services p,.work p,.info-images p
 {
 	padding-top: 30px;
 	font-size: 12px;
@@ -271,9 +302,9 @@ section.blue-section h2
 .first-header
 {
     width: 100%;
-    height: 90%;
+    height: 95%;
 }
-.second-header
+.second-header , .details
 {
     background-color: deepskyblue;
 }
@@ -367,3 +398,68 @@ section.blue-section h2
 {
     padding: 0px;
 }
+.details .col-md-3 
+{
+	padding-left: 15px;
+}
+.details h3,.details p
+{
+	line-height: 25px;
+	font-family: 'Open Sans';
+	color: white;
+	text-align: left;
+	padding-bottom: 30px;
+}
+.details h5
+{
+	color: white;
+	font-weight: 600;
+}
+.no-padding .portofolio-img  {
+padding: 0px;
+}
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.portfolio-box .portfolio-box-caption {
+  color: white;
+  opacity: 0;
+  display: block;
+  background: rgba(240, 95, 64, 0.9);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0 15px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+.portfolio-box:focus {
+  outline: none;
