@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
-html,
 body {
+    display: block;
   width: 100%;
   font-family: 'Montserrat','Kaushan Script','MyriadPro','OpenSans','RobotoCondensed', Arial, sans-serif;
 }
@@ -30,7 +30,12 @@ section
     padding-top: 3%;
     padding-bottom: 5%;
 }
-
+section .info
+{
+    padding: 0px;
+     height: 20px;
+    background-color: deepskyblue;
+}
 .navbar
 {
     height: 13%;
@@ -62,6 +67,10 @@ section
     font-size: 15px;
     margin-top: 7;
 }
+.nav li.active 
+{
+    color: black;
+}
 header
 {
     margin-top: 6.2%;
@@ -82,6 +91,13 @@ header .inner-header h1
       width: 100%;
 	  height: 100%;
   }
+.carousel-indicators li 
+{
+    border-width: 3px;
+}
+.carousel-indicators .active{
+    background-color: skyblue;
+}
 .about-us h2 ,.services h2,.work h2
 {
 	font-family:  'Kaushan Script';
@@ -293,5 +309,61 @@ section.blue-section h2
     width: 500px;
 }
 .verticalLine {
-  border-left: thick solid #ff0000;
+    margin-left: 15px;
+    border-left: 1px solid lightgrey;
+}
+.verticalLine p
+{
+    margin-left: -50px
+}
+.verticalline .line
+{
+    height: 60px;
+    width: 60px;
+    margin-top: 30px;
+    margin-left: -30px;   
+}
+.verticalline .logo
+{
+    margin-top: 30px;
+    margin-left: -80px;   
+}
+.verticalline h3,.verticalline h4,.verticalline p
+{
+       margin-left: -80px; 
+}
+.work-exp
+{
+    margin-top: 20%;
+}
+.work-exp p
+{
+    width: 80%;
+    font-size: 12px;
+    line-height: 30px;
+}
+.work-exp h1
+{
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+.work-exp a
+{
+    font-weight: 600;
+    background-color: white;
+    border-color: deepskyblue;
+    color: aqua;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.info-images
+{
+    padding-bottom: 10px;
+}
+.info-images div
+{
+    padding: 0px;
 }
