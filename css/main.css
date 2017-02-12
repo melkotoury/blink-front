@@ -45,6 +45,12 @@ section .info
     background-color: rgba(255,255,255,0.2);
 	border-color: rgba(255,255,255,0.2)
 }
+.nav-search
+{
+	color: white;
+	background-color: deepskyblue;
+	border-radius: 50px;
+}
 .navbar .info
 {
 	height: 15px;
@@ -101,7 +107,14 @@ section .info
 .navbar-default .nav > li.active > a:focus:hover {
 	color: dodgerblue;
 }
-
+.divider-vertical {
+height: 50px;
+margin: 0 9px;
+border-left: 3px solid #F2F2F2;
+}
+@media (max-width: 768px) {
+  .navbar-collapse { background:#cccccc; /*replace with desired color*/ } 
+}
 header
 {
     margin-top: 6.2%;
@@ -398,9 +411,9 @@ section.blue-section h2
 {
     padding: 0px;
 }
-.details .col-md-3 
+.details
 {
-	padding-left: 15px;
+	margin-top: -10px;
 }
 .details h3,.details p
 {
@@ -463,3 +476,8 @@ padding: 0px;
 }
 .portfolio-box:focus {
   outline: none;
+}
+.port-links
+{
+	
+}
