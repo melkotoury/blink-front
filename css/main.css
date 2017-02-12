@@ -71,7 +71,6 @@ section .info
 }
 .navbar-default .navbar-header .navbar-brand {
   color:black;
-	margin-top: 12px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -88,11 +87,11 @@ section .info
 }
 .navbar-default .nav > li 
 {
-	margin-top: 15px;
+	margin-top: %;
 }
 .navbar-default .nav > li div
 {
-	margin-top: 7px;
+	margin-top: 3%;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
