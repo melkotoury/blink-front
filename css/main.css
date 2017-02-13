@@ -50,7 +50,9 @@ section .info
     width: 100%;
     display: block;
     background-color: rgba(255,255,255,0.2);
-	border-color: rgba(255,255,255,0.2)
+	border-color: rgba(255,255,255,0.2);
+	padding-bottom: 5%;
+	
 }
 .nav-search
 {
@@ -114,11 +116,27 @@ section .info
 	color: dodgerblue;
 }
 .divider-vertical {
-height: 50px;
-margin: 0 9px;
-border-left: 3px solid #F2F2F2;
+height: 40px;
+margin: 9px;
+border-left: 3px solid #F2F2F3;
+}
+@media (max-width: 1260px) {
+ 	.navbar-brand
+	{
+		margin-top: -10px;
+	}
+	.divider-vertical
+	{
+		margin-top: 10px;
+		height: 30px;
+	}
+	.navbar-default .nav > li > .input-group
+	{
+		margin-top: 0%;
+	}
 }
 @media (max-width: 768px) {
+
   .navbar-collapse { background:#cccccc; /*replace with desired color*/ } 
 }
 header
@@ -562,7 +580,133 @@ padding: 0px;
 	height: 60%;
 	margin-top: 80px;
 }
-.img-collection img
+footer.black-section
 {
+    padding: 2%;
+    background-color:dimgrey;
+}
+footer.black-section i
+{
+	color: white;
+	cursor: pointer;
+	font-size: 30px;
+	padding: 15px;
+}
+footer.black-section .fa-facebook:hover
+{
+	background-color: royalblue;
+	color: white;
+}
+footer.black-section .fa-instagram:hover
+{
+	background-color: darkred;
+	color: white;
+}
+footer.black-section .fa-twitter:hover
+{
+	background-color: dodgerblue;
+	color: white;
+}
+footer.black-section .fa-linkedin:hover
+{
+	background-color: lightskyblue;
+	color: white;
+}
+footer.black-section .fa-youtube:hover
+{
+	background-color: red;
+	color: white;
+}
+footer.black-section p
+{
+	margin: 3%;
+	color: white;
+	font-family: 'Montserrat';
+	font-size: 20px;
+}
+.contact-form
+{
+	color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/index/5.jpg);
+}
+.contact-form .padding-bottom
+{
+	padding-bottom: 6%;
+}
+.contact-form .padding-bottom textarea
+{
+	max-width: 100%;
+	max-height: 30%;
+	border: 2px solid white;
+	background-color: transparent;
+	padding: 4%;
+}
+.contact-form .padding-left
+{
+	margin-left: 1px;
+}
+.contact-form .padding-bottom input
+{
+	border: 2px solid white;
+	background-color: transparent;
+	padding: 6%;
 	
+}
+.contact-form .btn-primary
+{
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	background-color: deepskyblue;
+	margin-left: -0.5%;
+	border-radius: 0;
+	border: 0px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.map-section
+{
+	padding: 0%;
+}
+#map
+{
+	height: 80%;
+	width: 100%;
+    pointer-events:none;
+    z-index: 1;
+    position: relative;
+}
+.z
+{
+	margin-left: 15%;
+    position: absolute;
+    z-index: 2;
+}
+.z .map-info
+{
+	color: white;
+	background-color: gray;
+	padding: 3%;
+	text-align: center;
+}
+.z .map-info h1
+{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.z .map-info h2
+{
+	font-size: 20px;
+}
+@media (max-width: 968px) {
+	.z .map-info h1
+	{
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	.z .map-info h2
+	{
+		font-size: 10px;
+	}
 }
