@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 body {
     display: block;
@@ -8,7 +12,14 @@ body {
   font-family: 'Montserrat','Kaushan Script','MyriadPro','OpenSans','RobotoCondensed', Arial, sans-serif;
 	overflow-x: hidden;
 }
-
+section,img,p,h1,h2,h3,h4,h5,h6,input
+{
+		-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
 hr.light {
 	border-color: dodgerblue;
 	border-width: 3px;
