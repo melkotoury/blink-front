@@ -21,11 +21,11 @@ body {
 }
 section,img,p,h1,h2,h3,h4,h5,h6,input
 {
-		-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+		-webkit-animation: fadein .7s ease both; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .7s ease both;; /* Firefox < 16 */
+        -ms-animation: fadein .7s ease both; /* Internet Explorer */
+         -o-animation: fadein .7s ease both; /* Opera < 12.1 */
+            animation: fadein .7s ease both;
 }
 hr.light {
 	border-color: dodgerblue;
