@@ -11,7 +11,7 @@ body {
   font-family: 'Montserrat','Kaushan Script','MyriadPro','OpenSans','RobotoCondensed', Arial, sans-serif;
 	overflow-x: hidden;
 }
-.navbar .navbar-brand img
+.navbar .navbar-brand img 
 {
 	-webkit-animation: fadein 0s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0s; /* Firefox < 16 */
@@ -19,7 +19,7 @@ body {
          -o-animation: fadein 0s; /* Opera < 12.1 */
             animation: fadein 0s;
 }
-section,img,p,h1,h2,h3,h4,h5,h6,input
+img,p,h1,h2,h3,h4,h5,h6,input
 {
 		-webkit-animation: fadein .7s ease both; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein .7s ease both;; /* Firefox < 16 */
