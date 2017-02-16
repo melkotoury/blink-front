@@ -621,7 +621,12 @@ footer.black-section .fa-instagram:hover
 	background-color: darkred;
 	color: white;
 }
-footer.black-section .fa-twitter:hover
+footer.black-section .fa-twitter:hover 
+, .team .fa-twitter:hover  
+, .team .fa-facebook:hover
+, .team .fa-instagram:hover
+, .team .fa-linkedin:hover
+ , .team .fa-youtube:hover
 {
 	background-color: dodgerblue;
 	color: white;
@@ -728,4 +733,80 @@ footer.black-section p
 	{
 		font-size: 10px;
 	}
+}
+.team .info-images img , .team .info-images .portfolio-box-caption-content
+{
+	height: 50%;
+	padding: 5%;
+}
+.team .info-images .project-name
+{
+	background-color: lightgoldenrodyellow;
+}
+.team .info-images .project-name i
+{
+	cursor: pointer;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	color: dodgerblue;
+}
+.team .info-images .project-name i:hover
+{
+	color: white;
+}
+.team .portfolio-box-caption
+{
+	background: rgba(0,191,255, 0.8);
+}
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: lightgray;
+  border: none;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li.active
+{
+	background-color: gray;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+#fade-quote-carousel .company-name
+{
+	font-size: 15px;
 }
