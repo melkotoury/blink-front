@@ -11,22 +11,6 @@ body {
   font-family: 'Montserrat','Kaushan Script','MyriadPro','OpenSans','RobotoCondensed', Arial, sans-serif;
 	overflow-x: hidden;
 }
-.navbar .navbar-brand img 
-{
-	-webkit-animation: fadein 0s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0s; /* Firefox < 16 */
-        -ms-animation: fadein 0s; /* Internet Explorer */
-         -o-animation: fadein 0s; /* Opera < 12.1 */
-            animation: fadein 0s;
-}
-img,p,h1,h2,h3,h4,h5,h6,input
-{
-		-webkit-animation: fadein .7s ease both; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein .7s ease both;; /* Firefox < 16 */
-        -ms-animation: fadein .7s ease both; /* Internet Explorer */
-         -o-animation: fadein .7s ease both; /* Opera < 12.1 */
-            animation: fadein .7s ease both;
-}
 hr.light {
 	border-color: dodgerblue;
 	border-width: 3px;
@@ -286,7 +270,7 @@ section.blue-section h2
 	color: rgba(0,0,0,0.5);
 	font-size: 10px;
 	padding-top: 0px;
-	padding-left: 70px;
+	padding-left: 75px;
 	text-align: left;
 }
 .services h5
@@ -412,11 +396,11 @@ section.blue-section h2
 .verticalline .logo
 {
     margin-top: 30px;
-    margin-left: -80px;   
+    margin-left: -60px;   
 }
 .verticalline h3,.verticalline h4,.verticalline p
 {
-       margin-left: -80px; 
+       margin-left: -60px; 
 }
 .work-exp
 {
@@ -723,17 +707,7 @@ footer.black-section p
 {
 	font-size: 20px;
 }
-@media (max-width: 968px) {
-	.z .map-info h1
-	{
-		font-size: 15px;
-		text-transform: uppercase;
-	}
-	.z .map-info h2
-	{
-		font-size: 10px;
-	}
-}
+
 .team .info-images img , .team .info-images .portfolio-box-caption-content
 {
 	height: 50%;
@@ -809,4 +783,39 @@ footer.black-section p
 #fade-quote-carousel .company-name
 {
 	font-size: 15px;
+}
+@media (max-width: 968px) {
+	.z .map-info h1
+	{
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	.z .map-info h2
+	{
+		font-size: 10px;
+	}
+	.services p
+	{
+	
+		padding-left: 0px;
+		text-align: center;
+	}
+	.verticalline .logo
+	{
+		margin-left: -30px;   
+	}
+	.verticalline h3,.verticalline h4,.verticalline p
+	{
+       margin-left: 0px; 
+	}
+	.port-link
+	{
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	.team .info-images img , .team .info-images .portfolio-box-caption-content
+	{
+		height: 80%;
+		padding: 5%;
+	}
 }

@@ -1,3 +1,4 @@
+
 // For the counters
 jQuery(function ($) {
       // custom formatting example
@@ -33,3 +34,4 @@ function initMap() {
           map: map
         });
       }
+
