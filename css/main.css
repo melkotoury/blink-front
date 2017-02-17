@@ -5,7 +5,7 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-body {
+html,body {
     display: block;
   width: 100%;
   font-family: 'Montserrat','Kaushan Script','MyriadPro','OpenSans','RobotoCondensed', Arial, sans-serif;
@@ -43,17 +43,17 @@ section
 section .info
 {
     padding: 0px;
-     height: 20px;
+	height: 20px;
     background-color: deepskyblue;
 }
 .navbar
 {
     height: 10%;
-    width: 100%;
     display: block;
     background-color: rgba(255,255,255,0.2);
 	border-color: rgba(255,255,255,0.2);
 	padding-bottom: 5%;
+	
 	
 }
 .nav-search
@@ -88,10 +88,6 @@ section .info
   font-size: 12px;
   color: #222222;
   text-transform: uppercase;
-}
-.navbar-default .nav > li 
-{
-	margin-top: %;
 }
 .navbar-default .nav > li div
 {
@@ -136,6 +132,14 @@ border-left: 3px solid #F2F2F3;
 	{
 		margin-top: 0%;
 	}
+	.navbar-default .nav > li div
+	{
+		width: 100%;
+	}
+	.navbar-default .divider-vertical
+	{
+		visibility: hidden;
+	}
 }
 @media (max-width: 768px) {
 
@@ -144,7 +148,6 @@ border-left: 3px solid #F2F2F3;
 header
 {
     margin-top: 6.2%;
-    width: 100%;
 }
 header .inner-header h1
 {
@@ -184,13 +187,10 @@ header .inner-header h1
 	font-size: 12px;
 	text-align: center;
 }
-.about-us .people
+.about-us .people img
 {
-	background-repeat: no-repeat;
-	height: 55%;
-	background-image: url(../img/index/7.jpg);
+	width: 100%;
 }
-
 section.blue-section
 {
 	background-color: dodgerblue;
@@ -341,22 +341,26 @@ section.blue-section h2
 .first-header
 {
     width: 100%;
-    height: 95%;
 }
 .second-header , .details
 {
-    background-color: deepskyblue;
+
 }
 .second-header div img
 {
-    height: 86.7%;
 }
-.info .container
+.no-padding
+{
+	padding: 0%;
+}
+
+.no-padding .who-we-are
 {
     color: white;
     padding: 10%;
+	background-color: deepskyblue;
 }
-.info .container a
+.no-padding .who-we-are a
 {
     font-size: 12px;
     border-radius: 0px;
@@ -365,18 +369,17 @@ section.blue-section h2
     padding-right: 25px;
     padding-left: 25px;
 }
-.info .container h2
+.no-padding .who-we-are h2
 {
     font-size: 25px;
     font-weight: 600;
     padding-bottom: 20px;
 }
-.info .container p
+.no-padding .who-we-are p
 {
-    
     font-size: 12px;
     line-height: 30px;
-    width: 500px;
+    width: 100%;
 }
 .verticalLine {
     margin-left: 15px;
@@ -817,5 +820,34 @@ footer.black-section p
 	{
 		height: 80%;
 		padding: 5%;
+	}
+	.no-padding .who-we-are
+	{
+		padding: 10%;
+	}
+	.no-padding .who-we-are p 
+	{
+		width: 100%;
+	}
+	.no-padding .who-we-are h2
+	{
+		font-size: 19px;
+		padding: px;
+	}
+	.no-padding .who-we-are p ,.no-padding .who-we-are a
+	{
+		font-size: 11px;
+	}
+	.modal-logo img
+	{
+		width: 50%;
+	}
+	.modal .modal-photos img
+	{
+		margin: 5%;
+	}
+	.contact-form
+	{
+		padding: 10%;
 	}
 }
