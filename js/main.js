@@ -1,4 +1,3 @@
-
 // For the counters
 jQuery(function ($) {
       // custom formatting example
