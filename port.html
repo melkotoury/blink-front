@@ -14,11 +14,19 @@
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Myraid-P" />
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-        <!-- scripts -->
+		<link href="css/scroller.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+			  <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/jquery.countTo.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvi-eMxMbg7_WS0xPoQQb_XjZsaqengZg&callback=initMap"> </script>
-        <script type="text/javascript" src="script.js"></script>
+		<script src="js/jssor.slider-22.2.6.mini.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 	</head>
 	<body>
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -34,7 +42,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right wow fadeIn animated">
                     <li>
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
@@ -56,7 +64,7 @@
                     </li>
 					<li>
 						<div class="input-group">
-							<div class="input-group">	
+							<div class="input-group wow fadeInRight animated" data-wow-delay="0.5s">	
 								<input type="text" class="form-control " placeholder="Search for.." aria-describedby="sizing-addon1">
 								<span class="input-group-addon nav-search" id="sizing-addon1"><i class="fa fa-search"></i></span>
 							</div>
@@ -69,17 +77,17 @@
         <!-- /.container-fluid -->
     </nav>
         <header>
-            <img class="img-responsive first-header" src="img/about-us/Design-home.jpg">
+            <img class="img-responsive first-header wow fadeInDown animated" src="img/about-us/Design-home.jpg">
         </header>
         <section class="about-us">
 			<div class="container">
-				<h2>Happy clients</h2>
-				<h1>WHAT PEOPLE SAY</h1>
+				<h2 class="wow fadeInRight animated">Happy clients</h2>
+				<h1 class="wow fadeInLeft animated">WHAT PEOPLE SAY</h1>
 
 				<hr class="light">
 			</div>
 			<div>
-				<div class="row port-link">
+				<div class="row port-link wow bounceIn animated" data-wow-delay="1s">
 					<div class="container">
 						<ul class="nav nav-pills">
 							<li><a data-toggle="pill" href="#activations">Activations</a></li>
@@ -96,7 +104,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="tab-content">
+				<div class="tab-content wow bounceInRight animated">
 					<div id="activations" class="tab-pane fade">
 						<section class="info-images">
 							<h2>Activations</h2>
