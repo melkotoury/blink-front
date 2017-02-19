@@ -73,16 +73,6 @@ section .info
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   transition: all 0.35s;
 }
-.navbar-default .navbar-header .navbar-brand {
-  color:black;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
-}
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
   font-size: 12px;
@@ -120,6 +110,10 @@ margin: 9px;
 border-left: 3px solid #F2F2F3;
 }
 @media (max-width: 1260px) {
+	.navbar-default
+	{
+		height: 11%;
+	}
  	.navbar-brand
 	{
 		margin-top: -10px;
@@ -134,12 +128,13 @@ border-left: 3px solid #F2F2F3;
 	}
 	.navbar-default .divider-vertical
 	{
+		position: absolute;
 		visibility: hidden;
 	}
 }
 @media (max-width: 768px) {
 
-  .navbar-collapse { background:#cccccc; /*replace with desired color*/ } 
+  .navbar-collapse { background:rgba(255,255,255,0.9); /*replace with desired color*/ } 
 }
 header
 {
