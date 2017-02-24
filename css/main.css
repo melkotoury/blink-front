@@ -657,20 +657,24 @@ footer.black-section p
 {
 	font-size: 20px;
 }
-
+.team .info-images .row h1
+{
+    font-size: 30px;
+}
 .team .info-images img , .team .info-images .portfolio-box-caption-content
 {
 	height: 50%;
-	padding: 5%;
+	padding: 2%;
 }
 .team .info-images .project-name
 {
+    margin-top: 180px;
 	background-color: lightgoldenrodyellow;
 }
 .team .info-images .project-name i
 {
 	cursor: pointer;
-	font-size: 30px;
+	font-size: 20px;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -734,7 +738,7 @@ footer.black-section p
 {
 	font-size: 15px;
 }
-@media (max-width: 968px) {
+@media (max-width: 992px) {
 	.z .map-info h1
 	{
 		font-size: 15px;
@@ -805,4 +809,9 @@ footer.black-section p
 	{
 		margin-left: 6%;
 	}
+    .team .info-images .project-name
+{
+    margin-top: 340px;
+	background-color: lightgoldenrodyellow;
+}
 }
