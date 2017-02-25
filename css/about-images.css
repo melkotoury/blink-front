@@ -1,4 +1,9 @@
-.info-images .row
-{
-    margin-left: 0px;
+.col-xs-2{
+
+	width: 20%;
 }
+
+.col-xs-4{
+	width: 40%;
+}
+
