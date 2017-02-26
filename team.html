@@ -17,6 +17,7 @@
 		<link href="css/animate.css" rel="stylesheet">
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/jquery.flip.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvi-eMxMbg7_WS0xPoQQb_XjZsaqengZg&callback=initMap"> </script>
 		<script type="text/javascript" src="js/main.js"></script>
@@ -24,6 +25,19 @@
               <script>
               new WOW().init();
               </script>
+        <script>
+            $(function(){
+                $(".flip-horizontal").flip({
+                    trigger: 'manual'          
+                    }); 
+                $(".flip-horizontal").on('mouseover',function(){
+                    $(this).flip(true)
+                    });
+                $(".flip-horizontal").on('mouseout',function(){
+                    $(this).flip(false)  
+                    });
+            });
+        </script>
 	</head>
 	<body>
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -89,138 +103,146 @@
 			</div>
             	<div class="row">
                 	<div class="col-lg-3 col-md-3  wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
 					</div>
 					<div class="col-lg-3 col-md-3  wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
 					</div>
 					<div class="col-lg-3 col-md-3  wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
 					</div>
 					<div class="col-lg-3 col-md-3  wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
 					</div>
 					<div class="col-lg-3 col-md-3  wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
 					</div>
-					<div class="col-lg-3 col-md-3 wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+					<div class="col-lg-3 col-md-3  wow bounceIn animated">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
 					</div>
                     <div class="col-lg-3 col-md-3  wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
-					</div>
-                    <div class="col-lg-3 col-md-3 wow bounceIn animated">
-                    	<a class="portfolio-box">
-                        	<img src="img/index/2.jpg" class="img-responsive" alt="">
-                        	<div class="portfolio-box-caption">
-                            	<div class="portfolio-box-caption-content">
-									<div class="project-name">
+					</div> 
+                    <div class="col-lg-3 col-md-3  wow bounceIn animated">
+                    	<div id="flip-this" class="flip-horizontal"> 
+                            <div class="front"> 
+                                <img class="img-responsive" src="img/index/2.jpg" alt="" />
+                            </div> 
+                            <div class="back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="project-name">
 										<i class="fa fa-facebook"></i>
 										<i class="fa fa-instagram"></i>
 										<i class="fa fa-twitter"></i>
 										<i class="fa fa-linkedin"></i>
-									</div>
-								</div>
-							</div>
-						</a>
+                                </div>
+                            </div> 
+                        </div>
 						<h1 class="wow fadeIn animated" data-wow-delay="1s">Memebr Name</h1>
 						<p class="wow fadeIn animated" data-wow-delay="1s">Lorem ipsum dolor sit amet</p>
 					</div>

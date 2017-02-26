@@ -43,7 +43,7 @@ section
 section .info
 {
     padding: 0px;
-	height: 20px;
+    height: 20px;
     background-color: deepskyblue;
 }
 .navbar
@@ -381,7 +381,7 @@ section.blue-section h2
 }
 .info-images
 {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 .info-images div
 {
@@ -444,10 +444,10 @@ padding: 0px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category i {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 35px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
@@ -668,7 +668,7 @@ footer.black-section p
 }
 .team .info-images .project-name
 {
-    margin-top: 180px;
+    margin-top: 100px;
 	background-color: lightgoldenrodyellow;
 }
 .team .info-images .project-name i
@@ -809,9 +809,63 @@ footer.black-section p
 	{
 		margin-left: 6%;
 	}
-    .team .info-images .project-name
-{
-    margin-top: 340px;
-	background-color: lightgoldenrodyellow;
 }
+.see-more:hover
+{
+    cursor: pointer;
+}
+.two-cols
+{
+    
+height: 129px;
+    
+width: 459px;
+}
+#flip-this {
+	height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+#flip-this img {
+	width: 300px;
+    height: 300px;
+}
+
+#flip-this .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+    width: 280px;
+}
+#about-flip {
+	height: 129px;
+    width: 229px;
+}
+#about-flip img {
+	width: 229px;
+    height: 129px;
+}
+
+#about-flip .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+    width: 229px;
+    font-size: 10px;
+}
+#about-flip .back p
+{
+    padding-top: 30px;
+}
+.padding-bottom
+{
+    margin-top: 5%;
+}
+.gray .back
+{
+    background-color: #b7b7b7 !important;
+}
+.dim .back
+{
+        background-color: #4c4d4d !important;
 }
