@@ -4,8 +4,35 @@
 
 .info-images .col-xs-4{
 	width: 40%;
+	height: 152px;
+	width: 539px;
 }
 .info-images .row
 {
     margin: 0px;
+}
+#about-flip img
+{
+    background-color: transparent;
+     width: 271.8px;
+    height: 151.359px;
+}
+@media (max-width: 553px) {
+   #about-flip 
+    {
+        background-color: transparent;
+        width: auto;
+        height: 151.359px;
+    }
+    #about-flip img
+    {
+        background-color: transparent;
+         width: auto;
+        height: auto;
+    }
+    .info-images .col-xs-4{
+	width: 40%;
+	height: auto;
+	width: auto;
+    }
 }

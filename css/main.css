@@ -808,7 +808,12 @@ footer.black-section p
 	.my-slider img
 	{
 		margin-left: 6%;
-	}
+    }
+    .info-images .col-xs-4{
+	width: 40%;
+	height: 152px;
+	width: 539px;
+}
 }
 .see-more:hover
 {
@@ -841,11 +846,11 @@ width: 459px;
 	width: 269.8;
 	height: 151.67;
 }
-#about-flip .front {
-    background: #2184cd;
+#about-flip .front { 
     width: 275.8px;
     height: 153.359px;
 }
+
 #about-flip .front h1
 {
     margin-top: 55px;
@@ -873,6 +878,10 @@ width: 459px;
 .dim .back, .dim .front
 {
         background-color: #4c4d4d !important;
+}
+.sky .back, .sky .front
+{
+     background-color: #2184cd;
 }
 .gray .front h1
 {
