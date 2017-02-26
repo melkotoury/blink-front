@@ -1,9 +1,11 @@
-.col-xs-2{
-
+.info-images .col-xs-2{
 	width: 20%;
 }
 
-.col-xs-4{
+.info-images .col-xs-4{
 	width: 40%;
 }
-
+.info-images .row
+{
+    margin: 0px;
+}

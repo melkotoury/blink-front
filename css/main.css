@@ -838,19 +838,24 @@ width: 459px;
     width: 280px;
 }
 #about-flip {
-	height: 129px;
-    width: 229px;
+	width: 269.8;
+	height: 151.67;
 }
-#about-flip img {
-	width: 229px;
-    height: 129px;
+#about-flip .front {
+    background: #2184cd;
+    width: 275.8px;
+    height: 153.359px;
 }
-
+#about-flip .front h1
+{
+    margin-top: 55px;
+    color: white;
+}
 #about-flip .back {
     background: #2184cd;
     color: #fff;
     text-align: center;
-    width: 229px;
+    width: width: 275.8px;
     font-size: 10px;
 }
 #about-flip .back p
@@ -861,11 +866,15 @@ width: 459px;
 {
     margin-top: 5%;
 }
-.gray .back
+.gray .back ,.gray .front
 {
     background-color: #b7b7b7 !important;
 }
-.dim .back
+.dim .back, .dim .front
 {
         background-color: #4c4d4d !important;
+}
+.gray .front h1
+{
+    color: #227fb5  !important;
 }
