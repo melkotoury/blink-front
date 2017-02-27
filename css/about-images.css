@@ -27,12 +27,12 @@
     #about-flip img
     {
         background-color: transparent;
-         width: auto;
-        height: auto;
+        width: auto;
+        height: 151.359px;
     }
     .info-images .col-xs-4{
-	width: 40%;
-	height: auto;
-	width: auto;
+        width: 40%;
+        height: auto;
+        width: auto;
     }
 }
