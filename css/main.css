@@ -856,10 +856,10 @@ footer.black-section p {
         padding: 10%;
     }
     .my-slider {
-        padding-bottom: 10px;
+        padding-bottom: 2%;
     }
     .my-slider img {
-        margin-left: 6%;
+        margin-left: 12%;
     }
     .info-images .col-xs-4 {
         width: 40%;
@@ -944,3 +944,16 @@ footer.black-section p {
 .gray .front h1 {
     color: #227fb5 !important;
 }
+@media (max-width: 492px){
+.my-slider img {
+        margin-left: 10%;
+    }
+    }
+@media (max-width: 422px){
+.my-slider img {
+        margin-left: 0%;
+    }
+    .my-slider {
+        margin-left: 5%;
+    }
+    }
